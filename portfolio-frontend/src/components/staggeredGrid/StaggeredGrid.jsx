@@ -24,7 +24,7 @@ const StaggeredGrid = () => {
       }, []);
 
     return (
-        <div class="gallery">
+        <div className="gallery">
             {Item()}
             {Item()}
             {Item()}

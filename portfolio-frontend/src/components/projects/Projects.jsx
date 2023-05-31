@@ -9,15 +9,17 @@ import "./Projects.css";
 const Cards = (props) =>{
     return(
         <div className="cardchild">
-        <Card style={{ width: '18rem' }}>
+        <Card style={{ width: '18rem', backgroundColor:'#191919' }}>
                 <Card.Img variant="top" src="holder.js/100px180" />
                 <Card.Body>
-                    <Card.Title>{props.title}</Card.Title>
-                    <Card.Text>
-                        Some quick example text to build on the card title and make up the
-                        bulk of the card's content.
+                    <Card.Title style={{color:'white', fontWeight:'bolder'}}>{props.title}</Card.Title>
+                    <Card.Text style={{color:'white'}}>
+                        Quick description of the project
                     </Card.Text>
-                    <Button variant="primary" href={props.link}>GitHub</Button>
+                    <div className="buttonGrid">
+                        <Button style={{fontWeight:'bolder'}} target="_blank" variant="dark" href={props.link}>GitHub</Button>
+                        <Button style={{fontWeight:'bolder'}} target="_blank" variant="dark" href={props.link}>More Info</Button>
+                    </div>
                 </Card.Body>
             </Card>
         </div>
@@ -33,18 +35,18 @@ const Title =  () =>{
 }
 
 const Projects = () => {
+    const githubLink = "https://github.com/msabeeh01"
+
     return (
         <>
         {Title()}
         <div className="container">
-            {Cards({title: 'Portfolio',link: 'https://github.com/nathan-daniel/portfolio-frontend'})}
-            {Cards({title: 'Portfolio',link: 'https://github.com/nathan-daniel/portfolio-frontend'})}
-            {Cards({title: 'Portfolio',link: 'https://github.com/nathan-daniel/portfolio-frontend'})}
-            {Cards({title: 'Portfolio',link: 'https://github.com/nathan-daniel/portfolio-frontend'})}
-            {Cards({title: 'Portfolio',link: 'https://github.com/nathan-daniel/portfolio-frontend'})}
-            {Cards({title: 'Portfolio',link: 'https://github.com/nathan-daniel/portfolio-frontend'})}
-            {Cards({title: 'Portfolio',link: 'https://github.com/nathan-daniel/portfolio-frontend'})}
-            {Cards({title: 'Portfolio',link: 'https://github.com/nathan-daniel/portfolio-frontend'})}
+            {Cards({title: 'Project',link: githubLink})}
+            {Cards({title: 'Project',link: githubLink})}
+            {Cards({title: 'Project',link: githubLink})}
+            {Cards({title: 'Project',link: githubLink})}
+            {Cards({title: 'Project',link: githubLink})}
+            {Cards({title: 'Project',link: githubLink})}
         </div>
         </>
     )
