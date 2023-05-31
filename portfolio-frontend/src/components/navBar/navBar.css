@@ -1,0 +1,15 @@
+.navbar-cus{
+    background-color:#191919;
+}
+
+.titleContainer{
+    display:flex;
+    justify-content: flex-start;
+
+}
+
+.titleContainer h2{
+    font-weight: 600;
+    padding: 1rem 1rem;
+    color: white
+}

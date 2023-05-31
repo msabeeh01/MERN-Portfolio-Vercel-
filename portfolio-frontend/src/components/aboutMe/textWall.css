@@ -1,0 +1,17 @@
+.sidebyside{
+    display: flex;
+    padding: 10px;
+    background-color: #191919;
+}
+
+.splitHalf{
+    flex:1;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.justify{
+    color: white;
+}
