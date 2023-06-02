@@ -1,16 +1,18 @@
 import React from "react";
-
+import { useState, useEffect } from "react";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/esm/Button";
 
 //css import
 import "./Projects.css";
+import GetCloudImage from "../getImages/getCloudImage";
+
 
 const Cards = (props) =>{
     return(
         <div className="cardchild">
         <Card style={{ width: '18rem', backgroundColor:'#191919' }}>
-                <Card.Img variant="top" src="holder.js/100px180" />
+                <GetCloudImage searchTerm='myImage.jpg'/>
                 <Card.Body>
                     <Card.Title style={{color:'white', fontWeight:'bolder'}}>{props.title}</Card.Title>
                     <Card.Text style={{color:'white'}}>

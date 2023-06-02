@@ -1,8 +1,12 @@
 import "./AboutPage.css";
 
+//components import
+import MoreAboutMe from "../../components/moreaboutMe/MoreAboutMe";
 const AboutPage = () => {
-    return(
-        <p className="container">Whats good</p>
+    return (
+        <div className="container">
+            <MoreAboutMe />
+        </div>
     )
 }
 

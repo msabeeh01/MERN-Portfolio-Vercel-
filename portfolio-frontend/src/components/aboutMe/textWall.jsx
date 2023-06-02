@@ -37,8 +37,6 @@ const Postion = () =>{
     )
 }
 
-
-
 const TextWall = () =>{
     return(
         <div className="sidebyside">
